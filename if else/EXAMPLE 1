@@ -1,22 +1,18 @@
-// Program to print positive number entered by the user
-// If the user enters a negative number, it is skipped
+// Program to display a number if it is negative
 
-#include <iostream>
-using namespace std;
-
+#include <stdio.h>
 int main() {
+    int number;
 
-  int number;
+    printf("Enter an integer: ");
+    scanf("%d", &number);
 
-  cout << "Enter an integer: ";
-  cin >> number;
+    // true if number is less than 0
+    if (number < 0) {
+        printf("You entered %d.\n", number);
+    }
 
-  // checks if the number is positive
-  if (number > 0) {
-    cout << "You entered a positive integer: " << number << endl;
-  }
+    printf("The if statement is easy.");
 
-  cout << "This statement is always executed.";
-
-  return 0;
+    return 0;
 }
