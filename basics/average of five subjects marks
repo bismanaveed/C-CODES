@@ -1,0 +1,19 @@
+#include<stdio.h>
+int main()
+{
+	int e,m,p,c,i,sum;
+	float averg;
+	printf("enter the subjects marks");
+	scanf("%d %d %d %d %d",&e,&m,&p,&c,&i);
+	sum=e+m+p+c+i;
+	averg=sum/5;
+	printf("average marks=%f",averg);
+	
+	
+	
+	
+	
+	
+	
+	return 0;
+}
